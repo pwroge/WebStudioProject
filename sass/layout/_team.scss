@@ -1,0 +1,94 @@
+.team {
+    padding: 94px 0;
+    background-color: #F5F4FA;
+    &-title{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 50px;
+    align-items: center;
+    }
+    &-list{
+        @include tab(767px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+    &-list-item{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    @include tab(767px) {
+    flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desc(1199px){
+    flex-basis: calc((100% - 90px) / 4);
+    }
+    }
+    &-list-text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #757575;
+    margin-bottom: 30px;
+    }
+    .social-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+    .social-list-link{
+        width: 44px;
+        height: 44px;
+        color: #AFB1B8;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        &:hover{
+        color: #FFFFFF;
+        background-color: #2196F3;
+        }
+    }
+    .social-list-icon{
+        fill: currentColor;
+    }
+    .social-list-text{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.41px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    &-list-text-wrap{
+        padding: 30px;
+    }
+    &-list-text{
+        margin: 10px;
+        }
+    &-list-item{
+        background-color: #FFFFFF;
+    }
+}
+

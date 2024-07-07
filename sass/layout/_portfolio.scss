@@ -1,0 +1,116 @@
+.portfolio{
+    padding: 94px 0;
+    .filter-list{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 15px;
+        @include tab(767px){
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        @include desc(1199px){
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+    }
+    .filter-list-btn{
+        @include desc(1199px){
+            font-size: 16px;
+            line-height: 26px;
+        }
+        padding: 6px 22px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #212121;
+        background-color: #F5F4FA;
+        &:hover{
+             background-color: #2196F3; 
+             color: #FFFFFF;
+          }
+    }
+    &-list-text{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #757575;
+    }
+    &-list-title{
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        color: #212121;
+    }
+    &-list{
+        @include tab(767px) {
+            display: flex;
+            // justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        } 
+    }
+    &-list-item{
+        @include tab (767px) {
+            // flex-basis: calc((100% - 30px) / 2);
+            width: 354px;
+        }
+    }
+    &-form { 
+        @include tab(767px) {
+            margin: 0 auto;
+        }
+    }
+    &-form-input {
+        padding: 15px;
+        width: 100%;
+        height: 50px;
+        background-color: #2F303A;
+        border: 1px solid #FFFFFF4D;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        @include tab(767px) {
+            width: 450px;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &-form-btn {
+        width: 200px;
+        height: 50px;
+        background-color: #2196F3;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .mail-title {
+        width: 200px;
+        height: 50px;
+        color: white;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}

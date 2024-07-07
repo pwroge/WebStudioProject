@@ -1,0 +1,42 @@
+.work{
+    @include desc(1199px){
+    padding-bottom: 94px;
+    display: block;
+    }
+    display: none;
+    &-title{
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #212121;
+        margin-bottom: 50px;
+    }
+    &-list{
+        display: flex;
+        gap: 30px;
+    }
+    &-list-text{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        background-color: #2F303ACC;
+        width: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.41px;
+        letter-spacing: 0.03em;
+    }
+    &-list-img-wrap{
+        position: relative;
+    }
+}

@@ -1,0 +1,84 @@
+.header { 
+   padding: 25px 0;
+  .logo{
+   font-family: Raleway;
+   font-size: 26px;
+   font-weight: 700;
+   line-height: 30.52px;
+   letter-spacing: 0.03em;
+   text-align: left;
+   color: #2196F3;
+ }
+ &-logo{
+   color: #000000;
+ }
+ .nav-list-link{
+   font-family: Roboto;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 16.41px;
+   letter-spacing: 0.02em;
+   text-align: left;
+   color: #212121;
+    &:hover{
+      color: #2196F3; 
+    }
+ }
+ .contact-list-link{
+  @include tab(767px) {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #757575; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  @include desc(1199px){
+    font-size: 14px;
+    line-height:  16px;
+  }
+   &:hover{
+   color: #2196F3;
+   }
+ }
+ .contact-list-item{
+    &:hover{
+    color: #2196F3; 
+    }
+ }
+ .contact-list{
+  display: none;
+  @include tab(767px){
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  @include desc(1199px){
+    gap: 50px;
+    flex-direction: row;
+  }
+ }
+ .nav-list{
+  display: none;
+  @include tab(767px){
+    display: flex;
+    gap: 50px;
+  }
+
+ }
+ &-container{
+  @include tab(767px){
+    display: flex;
+    gap: 87px;
+    align-items: center;
+  }
+   @include desc(1199px){
+    gap: 93px;
+   }
+ }
+}

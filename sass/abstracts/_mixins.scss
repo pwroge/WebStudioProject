@@ -1,0 +1,23 @@
+@mixin btn($bg, $color, $width, $height, $border-radius ) {
+     background-color: $bg;
+     color: $color;
+     width: $width;
+     height: $height;
+     border-radius: $border-radius;
+    }
+    @mixin mob($breakpoint) {
+     @media screen and (min-width: $breakpoint) {
+     @content;
+     }
+     }
+    @mixin tab($breakpoint) {
+     @media screen and (min-width: $breakpoint) {
+     @content;
+     }
+     }
+     
+     @mixin desc($breakpoint) {
+     @media screen and (min-width: $breakpoint) {
+     @content;
+     }
+     }
