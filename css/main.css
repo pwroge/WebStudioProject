@@ -330,8 +330,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    gap: 12px;
   }
 }
 .footer-form-input {
@@ -369,7 +368,6 @@ textarea {
   text-align: center;
   display: block;
   margin: 0 auto;
-  margin-left: 12px;
 }
 .footer .mail-title {
   width: 200px;
@@ -953,4 +951,40 @@ textarea {
 .form-modal-span {
   display: block;
   margin-bottom: 4px;
+}
+
+.btn-modal-close {
+  position: fixed;
+  right: 8px;
+  top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-modal-close:hover {
+  color: #2196F3;
+}
+.btn-modal-close .modal-close-icon {
+  fill: currentColor;
+}
+
+.modal-span-icon {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.modal-span {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
