@@ -1,6 +1,7 @@
 .portfolio{
     padding: 94px 0;
     .filter-list{
+        margin-bottom: 40px;
         display: flex;
         flex-wrap: wrap;
         column-gap: 8px;
@@ -17,19 +18,17 @@
         }
     }
     .filter-list-btn{
-        @include desc(1199px){
-            font-size: 16px;
-            line-height: 26px;
-        }
-        padding: 6px 22px;
+        padding: 6px 25px;
         font-family: Roboto;
         font-size: 16px;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.03em;
         text-align: center;
-        color: #212121;
-        background-color: #F5F4FA;
+        @include desc(1199px){
+        font-size: 16px;
+        line-height: 26px;
+        }
         &:hover{
              background-color: #2196F3; 
              color: #FFFFFF;
@@ -62,6 +61,7 @@
         } 
     }
     &-list-item{
+        margin-bottom: 30px;
         @include tab (767px) {
             // flex-basis: calc((100% - 30px) / 2);
             width: 354px;

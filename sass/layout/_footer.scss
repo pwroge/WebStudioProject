@@ -43,6 +43,8 @@
     justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
+    margin-right: 93px;
+    margin-left: 70px;
     }
     .social-list-link{
     width: 44px;
@@ -81,7 +83,7 @@
             column-gap: 165px;
             row-gap: 60px;
         }
-        @include desk(1199px) {
+        @include desc(1199px) {
             gap: 0;
             flex-wrap: nowrap;
         }
@@ -126,7 +128,7 @@
         text-align: center;
         display: block;
         margin: 0 auto;
-        @include desk(1199px) {
+        @include desc(1199px) {
             display: inline;
         }
     }
