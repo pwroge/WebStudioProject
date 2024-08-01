@@ -7,6 +7,8 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
+    transform: translateX(0);
+    transition: 1s;
     &-container {
         height: 100%;
         display: flex;
@@ -54,6 +56,11 @@
             cursor: pointer;
         }
     }
+    &-social-list-item:not(:first-child) {
+        border-left: 1px solid#212121;
+        padding-left: 10px;
+    }
+
     &-social-list-link {
         font-family: Roboto;
         font-size: 18px;
@@ -72,8 +79,8 @@
             color: #2196F3;
             fill: currentColor;
           }
-           
     }
+     
 }
 .mob-menu-contact-list-item:not(:last-child), .mob-menu-nav-list-item:not(:last-child) {
     margin-bottom: 32px;
@@ -83,5 +90,18 @@
     pointer-events: none;
     visibility: hidden;
     }
+.mob-menu-open-btn { 
+    background: transparent;
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    @include tab(767px) {
+        display: none;
+    }
+ }
+ .mob-menu.is-hidden {
+    transform: translateX(-100%);
+    
+ }
     
     

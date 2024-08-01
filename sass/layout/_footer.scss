@@ -1,4 +1,4 @@
-.footer{
+.footer {
     background-color: #2F303A;
     padding: 60px 0;
     .logo{
@@ -27,15 +27,6 @@
     .address-list-item{
     margin-bottom: 9px;
     }
-    .address-list-link{
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: #FFFFFF;
-    margin-bottom: 9px;
     }
     .social-list{
     display: flex;
@@ -74,10 +65,9 @@
     color: #FFFFFF;
     margin-bottom: 20px;
     }
-    &-container {
+    .footer-container {
         @include tab(767px) {
             display: flex;
-            gap: 70px;
             flex-wrap: wrap;
             justify-content: center;
             column-gap: 165px;
@@ -86,9 +76,10 @@
         @include desc(1199px) {
             gap: 0;
             flex-wrap: nowrap;
+            justify-content: space-between;
         }
     }
-    &-form { 
+    .footer-form { 
         @include tab(767px) {
             margin: 0 auto;
         } 
@@ -97,7 +88,7 @@
             gap: 12px;
         }
     }
-    &-form-input {
+    .footer-form-input {
         padding: 15px;
         width: 100%;
         height: 50px;
@@ -116,7 +107,7 @@
             width: 358px;
         }
     }
-    &-form-btn {
+    .footer-form-btn {
         width: 200px;
         height: 50px;
         background-color: #2196F3;
@@ -144,4 +135,11 @@
         display: block;
         margin: 0 auto; 
     }
+.help {
+    @include tab(767px) {
+    display: flex;
+    gap: 150px;
+    }
 }
+    
+
