@@ -8,7 +8,7 @@
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css " integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="body">
@@ -100,9 +100,61 @@
             <div class="container">
             <h2 class="work-title">Чим ми займаємося</h2>
             <ul class="work-list">
-                <li class="work-list-item"><div class="work-list-img-wrap"><img src="./images/box 1.jpg" alt="" class="work-list-img"><p class="work-list-text">Десктопні додатки</p></div></li>
-                <li class="work-list-item"><div class="work-list-img-wrap"><img src="./images/box 2.jpg" alt="" class="work-list-img"><p class="work-list-text">Мобільні додатки</p></div></li>
-                <li class="work-list-item"><div class="work-list-img-wrap"><img src="./images/box 3.jpg" alt="" class="work-list-img"><p class="work-list-text">Дизайнерські рішення</p></div></li>
+                <li class="work-list-item">
+                    <div class="work-list-img-wrap">
+                        <picture>
+                            <source 
+                            media="(min-width:1200px)"
+                            srcset="./img/img1-1x-desc.jpg 1x, ./img/img1-2x-desc.jpg 2x"
+                            type="image/jpeg"
+                            />
+                            <source 
+                            media="(min-width:1200px)"
+                            srcset="./img/img1-1x-desc.webp 1x, ./img/img1-2x-desc.webp 2x"
+                            type="image/jpeg"
+                            />
+                            <img src="./img/box 1.jpg" alt="" class="work-list-img">
+                        </picture>
+                        <p class="work-list-text">Десктопні додатки</p>
+                    </div>
+                </li>
+                <li class="work-list-item">
+                    <div class="work-list-img-wrap">
+                        <picture>
+                            <source
+                            media="(min-width:1200px)"
+                            srcset="./img/img2-1x-desc.jpg 1x, ./img/img2-2x-desc.jpg 2x"
+                            type="image/jpeg"
+                            />
+                            <source
+                            media="(min-width:1200px)"
+                            srcset="./img/img2-1x-desc.jpg 1x, ./img/img2-2x-desc.jpg 2x"
+                            type="image/jpeg"
+                            />
+                            <img src="./img/box 2.jpg" alt="" class="work-list-img">
+                        </picture>
+                        <p class="work-list-text">Мобільні додатки
+                        </p>
+                    </div>
+                </li>
+                <li class="work-list-item">
+                    <div class="work-list-img-wrap">
+                        <picture>
+                            <source
+                            media="(min-width:1200px)"
+                            srcset="./img/img3-1x-desc.jpg 1x, ./img/img3-2x-desc.jpg 2x"
+                            type="image/jpeg"
+                            />
+                            <source
+                            media="(min-width:1200px)"
+                            srcset="./img/img3-1x-desc.jpg 1x, ./img/img3-2x-desc.jpg 2x"
+                            type="image/jpeg"
+                            />
+                            <img src="./img/box 3.jpg" alt="" class="work-list-img">
+                        </picture>
+                        <p class="work-list-text">Дизайнерські рішення</p>
+                    </div>
+                </li>
             </ul>
             </div>
         </section>
@@ -111,7 +163,39 @@
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list-item">
-                    <img src="./images/ihor.jpg" alt="" class="team-list-img">
+                    <picture>
+                        <source 
+                        media="(min-width:1200px)"
+                        srcset="./img/Ihor-1x-desc.jpg 1x, ./img/Ihor-2x-desc.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(min-width:1200px)"
+                        srcset="./img/Ihor-1x-desc.webp 1x, ./img/Ihor-2x-desc.webp 2x"
+                        type="image/webp"
+                        />
+                        <source 
+                        media="(min-width:768px)"
+                        srcset="./img/Ihor-1x-tab.webp 1x, ./img/Ihor-2x-tab.webp 2x"
+                        type="image/webp"
+                        />
+                        <source
+                        media="(min-width:768px)"
+                        srcset="./img/Ihor-1x-tab.jpg 1x, ./img/Ihor-2x-tab.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(max-width:767px)"
+                        srcset="./img/Ihor-1x-mob.webp 1x, ./img/Ihor-2x-mob.webp 2x"
+                        type="image/webp"
+                        />
+                        <source
+                        media="(max-width:767px)"
+                        srcset="./img/Ihor-1x-mob.jpg 1x, ./img/Ihor-2x-mob.jpg 2x"
+                        type="image/webp"
+                        />
+                        <img src="./img/Ihor.jpg" alt="" class="team-list-img">
+                    </picture>
                     <div class="team-list-text-wrap">
                     <h3 class="team-list-title">Ігор Дем'яненко</h3>
                     <p class="team-list-text">Product Designer</p>
@@ -148,7 +232,34 @@
                     </ul>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/olga.jpg" alt="" class="team-list-img">
+                    <picture>
+                        <source 
+                        media="(min-width:1200px)"
+                        srcset="./img/olga.jpg 1x, ./img/olga-2x-desc.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(min-width:1200px)"
+                        srcset="./img/olga-1x-desc.webp 1x, ./img/olga-2x-desc.webp 2x"
+                        type="image/webp"
+                        />
+                        <source 
+                        media="(min-width:768px)"
+                        srcset="./img/olga-1x-tab.webp 1x, ./img/olga-2x-tab.webp 2x"
+                        type="image/webp"
+                        />
+                        <source
+                        media="(min-width:768px)"
+                        srcset="./img/olga-1x-tab.jpg 1x, ./img/olga-2x-tab.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(max-width:767px)"
+                        srcset="./img/olga-1x-mob.webp 1x, ./img/olga-2x-mob.webp 2x"
+                        type="image/webp"
+                        />
+                        <img src="./img/olga.jpg" alt="" class="team-list-img">
+                    </picture>
                     <div class="team-list-text-wrap">
                     <h3 class="team-list-title">Ольга Рєпіна</h3>
                     <p class="team-list-text">Frontend Developer</p>
@@ -161,6 +272,7 @@
                                 </svg>
                             </a>
                         </li>
+                         
                         <li class="social-list-item">
                             <a href="" class="social-list-link">
                                 <svg class="social-list-icon" width="20" height="20">
@@ -185,7 +297,34 @@
                     </ul>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/mykola.jpg" alt="" class="team-list-img">
+                    <picture>
+                        <source 
+                        media="(min-width:1200px)"
+                        srcset="./img/mykola.jpg 1x, ./img/mykola-2x-desc.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(min-width:1200px)"
+                        srcset="./img/mykola-1x-desc.webp 1x, ./img/mykola-2x-desc.webp 2x"
+                        type="image/webp"
+                        />
+                        <source 
+                        media="(min-width:768px)"
+                        srcset="./img/mykola-1x-tab.webp 1x, ./img/mykola-2x-tab.webp 2x"
+                        type="image/webp"
+                        />
+                        <source
+                        media="(min-width:768px)"
+                        srcset="./img/mykola-1x-tab.jpg 1x, ./img/mykola-2x-tab.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(max-width:767px)"
+                        srcset="./img/mykola-1x-mob.webp 1x, ./img/mykola-2x-mob.webp 2x"
+                        type="image/webp"
+                        />
+                        <img src="./img/mykola.jpg" alt="" class="team-list-img">
+                    </picture>
                     <div class="team-list-text-wrap">
                     <h3 class="team-list-title">Микола Тарасов</h3>
                     <p class="team-list-text">Marketing</p>
@@ -222,7 +361,34 @@
                     </ul>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/myhailo.jpg" alt="" class="team-list-img">
+                    <picture>
+                        <source 
+                        media="(min-width:1200px)"
+                        srcset="./img/mykhailo.jpg 1x, ./img/mykhailo-2x-desc.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(min-width:1200px)"
+                        srcset="./img/mykhailo-1x-desc.webp 1x, ./img/mykhailo-2x-desc.webp 2x"
+                        type="image/webp"
+                        />
+                        <source 
+                        media="(min-width:768px)"
+                        srcset="./img/mykhailo-1x-tab.webp 1x, ./img/mykhailo-2x-tab.webp 2x"
+                        type="image/webp"
+                        />
+                        <source
+                        media="(min-width:768px)"
+                        srcset="./img/mykhailo-1x-tab.jpg 1x, ./img/mykhailo-2x-tab.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <source
+                        media="(max-width:767px)"
+                        srcset="./img/mykhailo-1x-mob.webp 1x, ./img/mykhailo-2x-mob.webp 2x"
+                        type="image/webp"
+                        />
+                        <img src="./img/mykhailo.jpg" alt="" class="team-list-img">
+                    </picture>
                     <div class="team-list-text-wrap">
                     <h3 class="team-list-title">Михайло Єрмаков</h3>
                     <p class="team-list-text">UI Designer</p>

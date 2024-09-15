@@ -1,10 +1,24 @@
 .hero {
-        background-color: #2F303A;
         padding: 118px 0;
+        border: 1px solid black;
+        @include background-image("../../img/1x-mob-header.webp","../../img/1x-mob-header.jpg",$hero-gradient);
+        @include retina(2,192dpi,2dppx){
+            @include background-image ("../../img/2x-mob-header.webp","../../img/2x-mob-header.jpg",$hero-gradient);
+        } 
+        @include tab(767px){
+            @include background-image ("../../img/1x-tab-header.webp","../../img/1x-tab-header.jpg",$hero-gradient);
+            @include retina(2,192dpi,2dppx){
+            @include background-image ("../../img/2x-tab-header.webp","../../img/2x-tab-header.jpg",$hero-gradient);
+            }
+        }
         @include desc(1199px) {
             padding: 200px 0;
+            @include background-image ("../../img/1x-desc-header.webp","../../img/1x-desc-header.jpg",$hero-gradient);
+            background-size: cover;
+        @include retina(2,192dpi,2dppx){
+            @include background-image ("../../img/2x-desc-header.webp","../../img/2x-desc-header.jpg",$hero-gradient);
         }
-        // background-image: url("../../images/hero.png");
+        }
         &-title{
         font-family: Roboto;
         font-size: 26px;
@@ -43,7 +57,7 @@
         }
     }   
     }
-
+     
 
     
 
